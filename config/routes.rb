@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
   root "blogs#home"
-  get "users/new"
-  get "blogs/home"
-  get "blogs/about"
   get "/about", to: "blogs#about"
   get "/signup", to: "users#new"
   # The priority is based upon order of creation: first created -> highest priority.
